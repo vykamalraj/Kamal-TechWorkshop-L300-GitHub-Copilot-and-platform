@@ -91,7 +91,7 @@ module roleAssignment 'modules/roleAssignment.bicep' = {
   name: 'roleAssignment'
   params: {
     principalId: appService.outputs.principalId
-    acrId: acr.outputs.id
+    acrName: acr.outputs.name
   }
 }
 
