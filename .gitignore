@@ -136,6 +136,13 @@ coverage-html/
 # Generated files
 appsettings.*.json
 
+# Bicep compiled files
+infra/**/*.json
+!infra/main.parameters.json
+
+# Azure Developer CLI
+.azure/
+
 # Misc
 Thumbs.db
 desktop.ini

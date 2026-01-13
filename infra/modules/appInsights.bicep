@@ -17,7 +17,7 @@ param applicationType string = 'web'
 @description('Tags for the resource')
 param tags object = {}
 
-resource appInsights 'Microsoft.Insights/components@2020-02-02' = {
+resource appInsights 'Microsoft.Insights/components@2020-02-02-preview' = {
   name: name
   location: location
   tags: tags
