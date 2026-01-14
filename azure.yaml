@@ -1,0 +1,16 @@
+name: zavastorefront
+metadata:
+  template: bicep
+  description: Provision dev Azure infrastructure for ZavaStorefront
+
+services:
+  web:
+    project: ./src
+    host: appservice
+    language: dotnet
+    docker:
+      context: ./src
+      dockerfile: ./src/Dockerfile
+
+infra:
+  path: ./infra
